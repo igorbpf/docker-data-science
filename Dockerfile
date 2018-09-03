@@ -8,8 +8,8 @@ ENV SHELL=/bin/bash
 VOLUME /ds
 WORKDIR /ds
 
-COPY requirements.txt /ds
-COPY run_jupyter.sh /ds
+COPY requirements.txt /ds/requirements.txt
+COPY run_jupyter.sh /ds/run_jupyter.sh
 
 # Setup
 RUN apt-get update -y
